@@ -1,0 +1,120 @@
+    }
+
+    .footer-links a {
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    @media (max-width: 650px) {
+      .shell {
+        width: min(100% - 22px, 880px);
+        padding-top: 20px;
+      }
+
+      .topbar {
+        margin-bottom: 24px;
+      }
+
+      .privacy-link {
+        font-size: 0.84rem;
+      }
+
+      .hero {
+        border-radius: 24px;
+      }
+
+      .help-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card .email-button {
+        width: 100%;
+      }
+
+      footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Support navigation">
+      <a class="brand" href="#top" aria-label="Catdress Support home">
+        <span class="paw" aria-hidden="true">🐾</span>
+        <span>catdress</span>
+      </a>
+      <a class="privacy-link" href="https://anranmg.github.io/catdress-legal/privacy-policy.html">Privacy Policy</a>
+    </nav>
+
+    <section class="hero" id="top">
+      <p class="eyebrow">Help Center</p>
+      <h1>How can we help?</h1>
+      <p class="hero-copy">Find quick answers for creating looks, managing Catdress Pro, restoring purchases, and deleting your account.</p>
+      <a class="email-button" href="mailto:saveload2021@gmail.com?subject=Catdress%20Support">Email Catdress Support</a>
+    </section>
+
+    <h2 class="section-heading">Common questions</h2>
+    <section class="help-grid" aria-label="Catdress support topics">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">✨</div>
+        <h2>Getting the best result</h2>
+        <p>Use a clear, well-lit, front-facing photo with your cat's face and upper body visible. AI generation requires an internet connection, and results may vary.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">↻</div>
+        <h2>Restore Catdress Pro</h2>
+        <ol>
+          <li>Open Catdress and tap a locked outfit or the Go Pro banner.</li>
+          <li>On the subscription screen, tap <strong>Restore Purchase</strong>.</li>
+          <li>Make sure the device uses the same Apple Account that made the purchase.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">♛</div>
+        <h2>Manage or cancel a subscription</h2>
+        <p>Open Settings on your device, tap your name, choose Subscriptions, then select Catdress. Canceling stops future renewals while preserving access through the current billing period.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">⌫</div>
+        <h2>Delete your account</h2>
+        <p>After linking with Sign in with Apple, open Catdress, tap the information icon, and choose <strong>Delete Account</strong>. Deleting your account does not cancel an Apple subscription.</p>
+      </article>
+    </section>
+
+    <section class="contact-card" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">Still need help?</h2>
+        <p>Tell us your device model, iOS version, Catdress app version, and what happened. Please do not email passwords or payment information.</p>
+      </div>
+      <a class="email-button" href="mailto:saveload2021@gmail.com?subject=Catdress%20Support">saveload2021@gmail.com</a>
+    </section>
+
+    <footer>
+      <span>© 2026 Catdress. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="https://anranmg.github.io/catdress-legal/privacy-policy.html">Privacy Policy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+      </span>
+    </footer>
+  </main>
+</body>
+</html>
