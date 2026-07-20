@@ -1,8 +1,465 @@
-<h1>Privacy Policy</h1>
-<p>Last updated: May 31, 2026</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn how Catdress collects, uses, stores, and protects personal information.">
+  <meta name="theme-color" content="#6d28d9">
+  <title>Privacy Policy - Catdress</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1e1b4b;
+      --body: #4b5563;
+      --muted: #737188;
+      --purple: #6d28d9;
+      --purple-dark: #4c1d95;
+      --purple-soft: #ede9fe;
+      --surface: #ffffff;
+      --page: #f7f5ff;
+      --border: #e7e3f3;
+      --shadow: 0 18px 48px rgba(76, 29, 149, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(196, 181, 253, 0.38), transparent 28rem),
+        linear-gradient(180deg, #fbfaff 0%, var(--page) 100%);
+      color: var(--body);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--purple);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--purple-dark);
+    }
+
+    a:focus-visible {
+      outline: 3px solid rgba(109, 40, 217, 0.3);
+      outline-offset: 4px;
+      border-radius: 5px;
+    }
+
+    .page-shell {
+      width: min(100% - 32px, 1120px);
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--purple), #8b5cf6);
+      box-shadow: 0 8px 22px rgba(109, 40, 217, 0.22);
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 900;
+    }
+
+    .top-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .top-links a {
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(34px, 7vw, 66px);
+      border-radius: 30px;
+      background: linear-gradient(135deg, #21164f 0%, #4c1d95 52%, #7c3aed 100%);
+      box-shadow: 0 24px 62px rgba(76, 29, 149, 0.2);
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -110px;
+      bottom: -170px;
+      width: 330px;
+      height: 330px;
+      border: 54px solid rgba(255, 255, 255, 0.07);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #ddd6fe;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      color: white;
+      font-size: clamp(2.35rem, 7vw, 4.9rem);
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .hero-copy {
+      max-width: 630px;
+      margin: 18px 0 0;
+      color: #ede9fe;
+      font-size: clamp(1rem, 2vw, 1.16rem);
+    }
+
+    .updated {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 24px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #f5f3ff;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 238px minmax(0, 1fr);
+      align-items: start;
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 22px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: 0 10px 30px rgba(76, 29, 149, 0.06);
+      backdrop-filter: blur(12px);
+    }
+
+    .toc-title {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .toc a {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 650;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+    }
+
+    .policy {
+      min-width: 0;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .policy > p:first-child {
+      margin-top: 0;
+      color: var(--ink);
+      font-size: 1.08rem;
+    }
+
+    .policy h2,
+    .policy h3,
+    .policy h4 {
+      color: var(--ink);
+      line-height: 1.25;
+      scroll-margin-top: 24px;
+    }
+
+    .policy h2 {
+      margin: 3.1rem 0 1rem;
+      padding-top: 2.7rem;
+      border-top: 1px solid var(--border);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      letter-spacing: -0.035em;
+    }
+
+    .policy h2:first-of-type {
+      margin-top: 2rem;
+    }
+
+    .policy h3 {
+      margin: 2.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      letter-spacing: -0.02em;
+    }
+
+    .policy h4 {
+      margin: 1.65rem 0 0.55rem;
+      font-size: 1.04rem;
+    }
+
+    .policy p {
+      margin: 0.85rem 0;
+    }
+
+    .policy ul {
+      margin: 0.8rem 0 1.15rem;
+      padding-left: 1.35rem;
+    }
+
+    .policy li {
+      padding-left: 0.22rem;
+    }
+
+    .policy li + li {
+      margin-top: 0.55rem;
+    }
+
+    .policy li > p {
+      margin: 0.35rem 0;
+    }
+
+    .policy strong {
+      color: #312e81;
+    }
+
+    .policy #contact + p + ul {
+      padding: 18px 20px 18px 42px;
+      border: 1px solid #d8d0f1;
+      border-radius: 16px;
+      background: var(--page);
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      padding: 30px 4px 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer a {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 840px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+
+      .toc-links {
+        display: flex;
+        gap: 4px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: thin;
+      }
+
+      .toc a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .page-shell {
+        width: min(100% - 20px, 1120px);
+        padding-top: 18px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .top-links {
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 0.82rem;
+      }
+
+      .hero {
+        border-radius: 23px;
+      }
+
+      .policy {
+        padding: 25px 20px 34px;
+        border-radius: 21px;
+      }
+
+      .policy h2 {
+        font-size: 1.45rem;
+      }
+
+      .footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+
+      .page-shell {
+        width: 100%;
+        padding: 0;
+      }
+
+      .topbar,
+      .toc,
+      .footer {
+        display: none;
+      }
+
+      .hero {
+        padding: 0 0 24px;
+        background: none;
+        box-shadow: none;
+        color: black;
+      }
+
+      h1,
+      .hero-copy,
+      .updated {
+        color: black;
+      }
+
+      .updated {
+        padding: 0;
+        border: 0;
+      }
+
+      .policy-layout {
+        display: block;
+      }
+
+      .policy {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell" id="top">
+    <nav class="topbar" aria-label="Legal navigation">
+      <a class="brand" href="#top" aria-label="Catdress privacy policy home">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>catdress</span>
+      </a>
+      <span class="top-links">
+        <a href="https://anranmg.github.io/catdress-legal/support.html">Support</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a>
+      </span>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">Legal and Privacy</p>
+      <h1>Privacy Policy</h1>
+      <p class="hero-copy">How Catdress collects, uses, stores, and protects information when you use the app.</p>
+      <span class="updated">Last updated May 31, 2026</span>
+    </header>
+
+    <div class="policy-layout">
+      <aside class="toc" aria-label="Privacy policy contents">
+        <p class="toc-title">On this page</p>
+        <nav class="toc-links" aria-label="Table of contents">
+          <a href="#definitions">Definitions</a>
+          <a href="#data">Your data</a>
+          <a href="#retention">Retention</a>
+          <a href="#transfers">Transfers</a>
+          <a href="#deletion">Deletion</a>
+          <a href="#security">Security</a>
+          <a href="#children">Children</a>
+          <a href="#changes">Changes</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+
+      <article class="policy">
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-<p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
-<h2>Interpretation and Definitions</h2>
+<p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank" rel="noopener noreferrer">Privacy Policy Generator</a>.</p>
+<h2 id="definitions">Interpretation and Definitions</h2>
 <h3>Interpretation</h3>
 <p>The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
 <h3>Definitions</h3>
@@ -43,8 +500,8 @@
 <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
 </li>
 </ul>
-<h2>Collecting and Using Your Personal Data</h2>
-<h3>Types of Data Collected</h3>
+<h2 id="data">Collecting and Using Your Personal Data</h2>
+<h3 id="data-collected">Types of Data Collected</h3>
 <h4>Personal Data</h4>
 <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
 <h4>Usage Data</h4>
@@ -59,7 +516,7 @@
 </ul>
 <p>We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.</p>
 <p>You can enable or disable access to this information at any time, through Your Device settings.</p>
-<h3>Use of Your Personal Data</h3>
+<h3 id="data-use">Use of Your Personal Data</h3>
 <p>The Company may use Personal Data for the following purposes:</p>
 <ul>
 <li>
@@ -96,7 +553,7 @@
 <li><strong>With other users:</strong> If Our Service offers public areas, when You share Personal Data or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
 <li><strong>With Your consent</strong>: We may disclose Your Personal Data for any other purpose with Your consent.</li>
 </ul>
-<h3>Retention of Your Personal Data</h3>
+<h3 id="retention">Retention of Your Personal Data</h3>
 <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if We are required to retain Your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
 <p>Where possible, We apply shorter retention periods and/or reduce identifiability by deleting, aggregating, or anonymizing data. Unless otherwise stated, the retention periods below are maximum periods (&quot;up to&quot;) and We may delete or anonymize data sooner when it is no longer needed for the relevant purpose. We apply different retention periods to different categories of Personal Data based on the purpose of processing and legal obligations:</p>
 <ul>
@@ -133,15 +590,15 @@
 <li>Backup retention: Residual copies may remain in encrypted backups for a limited period consistent with our backup retention schedule and are not restored except where necessary for security, disaster recovery, or legal compliance.</li>
 <li>Anonymization: In some cases, We convert Personal Data into anonymous statistical data that cannot be linked back to You. This anonymized data may be retained indefinitely for research and analytics.</li>
 </ul>
-<h3>Transfer of Your Personal Data</h3>
+<h3 id="transfers">Transfer of Your Personal Data</h3>
 <p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ from those from Your jurisdiction.</p>
 <p>Where required by applicable law, We will ensure that international transfers of Your Personal Data are subject to appropriate safeguards and supplementary measures where appropriate. The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
-<h3>Delete Your Personal Data</h3>
+<h3 id="deletion">Delete Your Personal Data</h3>
 <p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
 <p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
 <p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any Personal Data that You have provided to Us.</p>
 <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
-<h3>Disclosure of Your Personal Data</h3>
+<h3 id="disclosure">Disclosure of Your Personal Data</h3>
 <h4>Business Transactions</h4>
 <p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
 <h4>Law enforcement</h4>
@@ -155,20 +612,35 @@
 <li>Protect the personal safety of Users of the Service or the public</li>
 <li>Protect against legal liability</li>
 </ul>
-<h3>Security of Your Personal Data</h3>
+<h3 id="security">Security of Your Personal Data</h3>
 <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially reasonable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-<h2>Children's Privacy</h2>
+<h2 id="children">Children&#39;s Privacy</h2>
 <p>Our Service does not address anyone under the age of 16. We do not knowingly collect personally identifiable information from anyone under the age of 16. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 16 without verification of parental consent, We take steps to remove that information from Our servers.</p>
 <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
-<h2>Links to Other Websites</h2>
+<h2 id="external-links">Links to Other Websites</h2>
 <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
 <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-<h2>Changes to this Privacy Policy</h2>
+<h2 id="changes">Changes to this Privacy Policy</h2>
 <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
 <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
 <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-<h2>Contact Us</h2>
+<h2 id="contact">Contact Us</h2>
 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
 <ul>
-<li>By email: saveload2021@gmail.com</li>
+<li>By email: <a href="mailto:saveload2021@gmail.com?subject=Catdress%20Privacy">saveload2021@gmail.com</a></li>
 </ul>
+      </article>
+    </div>
+
+    <footer class="footer">
+      <span>&copy; 2026 Catdress. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="#top">Back to top</a>
+        <a href="https://anranmg.github.io/catdress-legal/support.html">Support</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+      </span>
+    </footer>
+  </main>
+</body>
+</html>
+
