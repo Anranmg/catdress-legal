@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Support, troubleshooting, subscription help, and contact information for Catdress.">
   <meta name="theme-color" content="#6d28d9">
   <title>Catdress Support</title>
@@ -26,6 +26,8 @@
 
     html {
       scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
     }
 
     body {
@@ -36,6 +38,8 @@
       color: var(--ink);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
+      overflow-x: hidden;
+      overflow-wrap: break-word;
     }
 
     a {
@@ -66,6 +70,7 @@
     .brand {
       display: inline-flex;
       align-items: center;
+      flex-shrink: 0;
       gap: 9px;
       color: var(--ink);
       font-size: 1.25rem;
@@ -112,6 +117,12 @@
       bottom: -130px;
       border: 46px solid rgba(255, 255, 255, 0.08);
       border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero > * {
+      position: relative;
+      z-index: 1;
     }
 
     .eyebrow {
@@ -140,6 +151,7 @@
 
     .email-button {
       display: inline-flex;
+      max-width: 100%;
       min-height: 50px;
       align-items: center;
       justify-content: center;
@@ -148,8 +160,10 @@
       background: var(--white);
       color: #4c1d95;
       font-weight: 800;
+      text-align: center;
       text-decoration: none;
       box-shadow: 0 8px 24px rgba(30, 27, 75, 0.24);
+      overflow-wrap: anywhere;
     }
 
     .email-button:hover {
@@ -263,37 +277,111 @@
 
     @media (max-width: 650px) {
       .shell {
-        width: min(100% - 22px, 880px);
-        padding-top: 20px;
+        width: min(100% - 32px, 880px);
+        padding: 16px 0 40px;
       }
 
       .topbar {
-        margin-bottom: 24px;
+        gap: 12px;
+        margin-bottom: 20px;
       }
 
       .privacy-link {
-        font-size: 0.84rem;
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        font-size: 0.86rem;
       }
 
       .hero {
-        border-radius: 24px;
+        padding: 32px 20px;
+        border-radius: 20px;
+      }
+
+      .hero::after {
+        right: -130px;
+        bottom: -170px;
+      }
+
+      h1 {
+        font-size: clamp(2.15rem, 11vw, 2.8rem);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+      }
+
+      .hero-copy {
+        margin: 14px 0 22px;
+        line-height: 1.55;
+      }
+
+      .hero .email-button {
+        width: 100%;
       }
 
       .help-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .section-heading {
+        margin: 32px 0 14px;
+        font-size: 1.3rem;
+      }
+
+      .card {
+        padding: 20px 18px;
+        border-radius: 18px;
+      }
+
+      .card p,
+      .card ol {
+        font-size: 1rem;
       }
 
       .contact-card {
         grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 24px;
+        padding: 22px 18px;
+        border-radius: 18px;
       }
 
       .contact-card .email-button {
         width: 100%;
+        white-space: normal;
       }
 
       footer {
         align-items: flex-start;
         flex-direction: column;
+        gap: 12px;
+        padding-top: 24px;
+      }
+
+      .footer-links {
+        gap: 6px 14px;
+      }
+
+      .footer-links a {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .privacy-link {
+        align-self: stretch;
       }
     }
 
