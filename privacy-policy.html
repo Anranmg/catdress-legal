@@ -87,16 +87,12 @@
     }
 
     .brand-mark {
-      display: grid;
+      display: block;
       width: 36px;
       height: 36px;
-      place-items: center;
       border-radius: 11px;
-      background: linear-gradient(135deg, var(--purple), #8b5cf6);
       box-shadow: 0 8px 22px rgba(109, 40, 217, 0.22);
-      color: white;
-      font-size: 0.95rem;
-      font-weight: 900;
+      object-fit: cover;
     }
 
     .top-links {
@@ -530,7 +526,7 @@
   <main class="page-shell" id="top">
     <nav class="topbar" aria-label="Legal navigation">
       <a class="brand" href="#top" aria-label="Catdress privacy policy home">
-        <span class="brand-mark" aria-hidden="true">C</span>
+        <img class="brand-mark" src="applog.png" alt="" width="36" height="36">
         <span>catdress</span>
       </a>
       <span class="top-links">
