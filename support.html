@@ -80,15 +80,12 @@
     }
 
     .paw {
-      display: grid;
+      display: block;
       width: 36px;
       height: 36px;
-      place-items: center;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--purple), var(--purple-light));
-      color: var(--white);
       box-shadow: 0 8px 20px rgba(109, 40, 217, 0.24);
-      font-size: 1.05rem;
+      object-fit: cover;
     }
 
     .privacy-link {
@@ -400,7 +397,7 @@
   <main class="shell">
     <nav class="topbar" aria-label="Support navigation">
       <a class="brand" href="#top" aria-label="Catdress Support home">
-        <span class="paw" aria-hidden="true">🐾</span>
+        <img class="paw" src="applog.png" alt="" width="36" height="36">
         <span>catdress</span>
       </a>
       <a class="privacy-link" href="https://anranmg.github.io/catdress-legal/privacy-policy.html">Privacy Policy</a>
